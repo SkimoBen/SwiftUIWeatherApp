@@ -32,7 +32,7 @@ class WeatherViewModel: ObservableObject {
                 }
             }
             //this is the url with the API call. it has the data for the location, exclusions, and my API key.
-            let urlString = "https://api.openweathermap.org/data/3.0/onecall?lat=\(location.lat)&lon=\(location.lon)&exclude=minutely&units=metric&appid=537ecc8e4af6414e9c650dfea1c10ef3"
+            let urlString = "https://api.openweathermap.org/data/3.0/onecall?lat=\(location.lat)&lon=\(location.lon)&exclude=minutely&units=metric&appid=makeanAPIkey"
             guard let url = URL(string: urlString) else {
                 return
             }
